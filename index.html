@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+    <title>Vision Landings</title>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <nav>
+                <ul class="nav_meniu">
+                    <li class="col-md-2 english">English</li>
+                    <li class="col-md-2"><img src="icons/certified.svg" class="icons">CERTIFIED DEALER</li>
+                    <li class="col-md-3"><img src="icons/car.svg" class="icons"> FREE SHIPPING AND RETURNS</li>
+                    <li class="col-md-2"><img src="icons/phone.svg" class="icons">CUSTOMER SUPPORT</li>
+                    <li class="col-md-2 text-right">Login / Register</li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="main2">
+            <header>
+                <nav>
+                    <ul class="down_meniu">
+                        <img class="vision_logo col-md-2" src="icons/vision-logo.svg">
+
+                        <div class="dropdown">
+                            <li>GLASSES<i class="arrow down"></i></li>
+                            <div class="dropdown-content">
+                                <a href="#">Ray Ban</a>
+                                <a href="#">Etnia Barcelona</a>
+                            </div>
+                        </div>
+
+                        <li>SUNGLASSES</li>
+                        <li>HELP ME CHOOSE</li>
+                        <li>VIRTUAL TRY ON</li>
+                        <li>BOOK AN EYE TEST</li>
+                        <img class="mid_logo" src="icons/box.svg" class="icons2">
+                        <img class="mid_logo" src="icons/basket.svg" class="icons2">
+                        <img class="mid_logo" src="icons/heart.svg" class="icons2">
+                        <img class="mid_logo2" src="icons/search.svg" class="icons2">Search
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="w3-content slides col-6" style="max-width:800px;position:relative">
+
+                <img class="mySlides" src="vision_images/hero image.png" style="width:100%">
+                <img class="mySlides" src="vision_images/hero image.png" style="width:100%">
+
+                <a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+                <a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+
+            </div>
+            <div class="col-3"></div>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length };
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+    </div>
+
+    <div class="glasses_logo">
+        <img class="big_logo" src="brands_logos/calvin-clain-x2.png">
+        <img class="big_logo" src="brands_logos/diesel-x2.png">
+        <img class="big_logo" src="brands_logos/marc-jacobs-x2.png">
+        <img class="big_logo" src="brands_logos/boss-orange-x2.png">
+        <img class="big_logo" src="brands_logos/william-morris-x2.png">
+    </div>
+
+    <div class="middle_text">
+        <h3 class="spring"> THIS SPRING'S SPECIAL</h3>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-3 blokas">
+                <div class="row glasses_icon">
+                    <div class="col-10">
+                        <img src="icons/percent.svg" class="percent_icon">
+                    </div>
+                    <div class="col-2">
+                        <img src="icons/heart.svg" class="heart_icon">
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="vision_images/akiniai_1.jpg"></div>
+                <div class="old_price2">
+                    €200.00
+                </div>
+                <div class="new_price">
+                    €150.00
+                </div>
+                <div class="name">
+                    ETNIA BARCELONA
+                </div>
+                <div class="feature">
+                    QUITO 52 BLGD
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3 blokas">
+                <div class="row glasses_icon">
+                    <div class="col-10">
+                        <img src="icons/gift.svg" class="percent_icon">
+                    </div>
+                    <div class="col-2">
+                        <img src="icons/heart.svg" class="heart_icon">
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="vision_images/akiniai_2.jpg"></div>
+                <div class="old_price">
+                    €200.00
+                </div>
+                <div class="new_price">
+                    €150.00
+                </div>
+                <div class="name">
+                    RAY BAN
+                </div>
+                <div class="feature">
+                    CLUBMASTER OPTICS
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3 blokas">
+                <div class="row glasses_icon">
+                    <div class="col-10">
+                        <img src="icons/percent.svg" class="percent_icon">
+                    </div>
+                    <div class="col-2">
+                        <img src="icons/heart.svg" class="heart_icon">
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="vision_images/akiniai_3.jpg"></div>
+                <div class="old_price">
+                    €200.00
+                </div>
+                <div class="new_price">
+                    €150.00
+                </div>
+                <div class="name">
+                    RAY BAN
+                </div>
+                <div class="feature">
+                    CLUBMASTER OPTICS
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3 blokas">
+                <div class="row glasses_icon">
+                    <div class="col-10">
+                        <img src="icons/gift.svg" class="percent_icon">
+                    </div>
+                    <div class="col-2">
+                        <img src="icons/heart.svg" class="heart_icon">
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="vision_images/akiniai_4.jpg"></div>
+                <div class="old_price2">
+                    €200.00
+                </div>
+                <div class="new_price">
+                    €150.00
+                </div>
+                <div class="name">
+                    RAY BAN
+                </div>
+                <div class="feature">
+                    CLUBMASTER OPTICS
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="first_button">
+        <button class="button"> See all deals</button>
+    </div>
+
+    <div class="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 text_block">
+                    <h2 class="text">Virtual try on</h2>
+                    <h5>Perfect frames. How will I look? <br> Will they fit right? gel real answers <br>
+                        with our Virtual Try-On tool.</h5>
+                    <button class="button"> Try it now</button>
+                </div>
+                <div class="col-7">
+                    <img src="vision_images/try-on-2x.png" class="laptop">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="first_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 footer_text">
+                    Don't miss discounts & new collections
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <input type="email" id="name" name="name" placeholder="Your email here" class="email col-4">
+                <button class="button2">Subscribe</button>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-6 footer_text2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. <span class="privacy">Privacy policy</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="second_footer">
+        <footer>
+            <nav>
+                <ul class="footer_meniu">
+                    <li class="col-sm-3 vision">©Vision</li>
+                    <li class="footer_text3">Privacy Policy</li>
+                    <li class="footer_text3">Terms & Conditions</li>
+                    <li class="footer_text3"><span class="thirty_day">30 day return policy</span></li>
+                    <li class="footer_text3">Shipping policy</li>
+                    <li class="col-md-3 text-right">
+                        <img src="icons/fb.svg" class="icons3">
+                        <img src="icons/insta.svg" class="icons3">
+                        <img src="icons/youtube.svg" class="icons3">
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
+</body>
+
+</html>
